@@ -1,13 +1,115 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <link href="./output.css" rel="stylesheet" />
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <style>
+          /* Adicione o CSS personalizado diretamente */
+          body {
+              font-family: 'Poppins', sans-serif;
+          }
+      </style>
+    </head>
+    <body class="bg-[#FCFEFD]">
+        <main
+            class="w-full max-w-[1230px] mx-auto flex flex-col h-screen py-12 px-6"
+        >
+        <div>
+
+        </div>
+      
+            <nav class="">
+              <div class="flex items-center justify-between">
+              
+             
+                <img src="/public/logo.png" alt="logo" />
+                <button class="md:hidden"><i data-lucide="menu" class="text-[#FF725E]"></i></button>
+                <ul class="hidden md:flex items-center gap-7">
+                    <li>
+                        <a href="#" class="text-sm text-zinc-950 font-semibold hover:underline decoration-[#FF725E]  decoration-4 transition duration-300"
+                            >Home</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#" class="text-sm text-zinc-950 font-semibold hover:underline decoration-[#FF725E]  decoration-4 transition duration-300"
+                            >Sobre nós</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#" class="text-sm text-zinc-950 font-semibold hover:underline decoration-[#FF725E]  decoration-4 transition duration-300"
+                            >Suporte</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#" class="text-sm text-zinc-950 font-semibold hover:underline decoration-[#FF725E]  decoration-4 transition duration-300"
+                            >Fale conosco</a
+                        >
+                    </li>
+                </ul>
+              </div>
+            </nav>
+            <section class="flex flex-col h-screen items-center justify-center ">
+              <div class="grid md:grid-cols-2 mx-auto w-full justify-between  md:gap-16">
+
+                <div class=" flex items-center justify-center">
+                  <img src="/public/img-404.png" alt="image" />
+              </div>
+              <div class="max-w-[438px] space-y-4  w-full flex flex-col justify-center ">
+                  <h1 class="font-semibold text-[40px]">Opa!</h1>
+                  <h2 class="font-semibold text-2xl">
+                      Não encontramos essa página
+                  </h2>
+                  <p class="text-xl">
+                      Se você se perdeu no espaço, não se preocupe, tente
+                      voltar para a página inicial
+                  </p>
+                  <div class="flex md:flex-row  flex-col items-center gap-2.5">
+                      <button
+                          class="bg-[#FF725E] py-2 px-4 rounded-md w-[156px] text-sm font-medium hover:bg-[#d46353] transition duration-300"
+                      >
+                          Voltar para Home
+                      </button>
+                      <a href="" class="text-[#FF725E] font-bold text-xs md:text-sm hover:underline decoration-[#FF725E]  decoration-1 transition duration-300"
+                          >Visite nossa central de ajuda</a
+                      >
+                  </div>
+              </div>
+
+              </div>
+             
+            </section>
+            <footer class="flex flex-col md:flex-row items-center justify-between  gap-2">
+                <p class="text-zinc-950 text-xs md:text-sm">www.codespace.com.br</p>
+                <div class="flex md:flex-row flex-col gap-2 md:gap-7">
+                    <p class="text-zinc-950 text-xs md:text-sm">
+                        Siga-nos nas redes sociais
+                    </p>
+                    <div class="flex gap-3 md:gap-7 items-center justify-center">
+                        <a href="#"
+                            ><img src="/public/icon-whats.png" alt="whatsapp"
+                        /></a>
+                        <a href="#"
+                            ><img src="/public/icon-face.png" alt="whatsapp"
+                        /></a>
+                        <a href="#"
+                            ><img
+                                src="/public/icon-linkedin.png"
+                                alt="whatsapp"
+                        /></a>
+                    </div>
+                </div>
+            </footer>
+        </main>
+        <script>
+            lucide.createIcons(); // Renderiza os ícones no HTML
+        </script>
+    </body>
 </html>
